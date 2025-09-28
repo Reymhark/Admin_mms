@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body>
     <div class="login-container">
         <div class="login-left">
-            <img src="logo.png" alt="NextGen-MMS Logo" class="login-logo">
+            <img src="Osave.png" alt="NextGen-MMS Logo" class="login-logo">
             <div class="brand-title">NextGen-MMS</div>
             <div class="brand-subtitle">Login to your account</div>
 
@@ -112,7 +112,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="signup-link">
                 Don't have an account? <a href="signup.php">Sign up</a>
             </div>
-        </div>  
+        </div>
         <div class="login-right">
             <img src="osave.png" alt="Login Graphic" class="login-graphic">
         </div>

@@ -76,7 +76,7 @@ try {
 <body>
     <div class="signup-container">
         <div class="signup-left">
-            <img src="logo.png" alt="MerchFlow Logo" class="signup-logo">
+            <img src="Osave.png" alt="MerchFlow Logo" class="signup-logo">
             <div class="brand-title">MerchFlow Pro</div>
             <div class="brand-subtitle">Sign up for an account</div>
             <form class="signup-form" method="POST" action="signup.php">

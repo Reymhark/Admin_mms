@@ -456,15 +456,16 @@ body {
 }
 
 
-/* dashboard css */
+/* Dashboard css*/
 .content {
-    max-width: 1200px;          
+    max-width: 1200px;       
     margin: 50px auto;
     padding: 25px;
     font-family: "Poppins", sans-serif;
     line-height: 1.9;
     color: #222;
 }
+
 
 .img-1 {
     text-align: center;
@@ -486,11 +487,10 @@ body {
     padding: 0 20px;            
 }
 
-
 .img-2 {
     display: flex;
     justify-content: center;
-    gap: 35px;                  
+    gap: 35px;                 
     margin-bottom: 60px;
 }
 
@@ -505,7 +505,7 @@ body {
     transform: scale(1.05);
 }
 
-
+/* Responsive tweaks */
 @media (max-width: 900px) {
     .img-2 {
         flex-direction: column;
@@ -520,4 +520,75 @@ body {
         font-size: 16px;
         padding: 0;
     }
+}
+
+/* visitor registration form */
+.card-visitor { 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+.card-photo { 
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+.status-badge { 
+    font-size: 0.85rem; 
+}
+.visitor-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.visitor-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.visitor-card:hover {
+    transform: translateY(-5px);
+}
+.visitor-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #f0f0f0;
+}
+.visitor-card h3 {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+.visitor-card p {
+    margin: 3px 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+.visitor-card button {
+    margin-top: 12px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.visitor-card button[name="action"][value="time_in"] {
+    background-color: #28a745;
+    color: white;
+}
+.visitor-card button[name="action"][value="time_out"] {
+    background-color: #dc3545;
+    color: white;
+}
+.visitor-card button[disabled] {
+    background-color: #6c757d;
+    color: white;
+    cursor: not-allowed;
 }
